@@ -1,0 +1,19 @@
+spring:
+    profiles:
+        active: pro
+
+---
+server:
+    port: 8201
+spring:
+    profiles: pro
+    application:
+        name: microservicecloud-pro
+        
+---
+server:
+    port: 8202
+spring:
+    profiles: test
+    application:
+        name: microservicecloud-test
