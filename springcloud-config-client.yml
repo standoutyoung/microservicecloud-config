@@ -1,7 +1,7 @@
 spring:
   profiles:
     active:
-      - pro
+      pro
       
 ---
 server:
@@ -10,7 +10,7 @@ server:
 spring:
   profiles: pro
   application:
-    name: springcloud-config-client
+    name: springcloud-config-client-pro
     
 eureka:
   client:
@@ -23,7 +23,7 @@ server:
 spring:
   profiles: test
   application:
-    name: springcloud-config-client
+    name: springcloud-config-client-test
     
 eureka:
   client:
