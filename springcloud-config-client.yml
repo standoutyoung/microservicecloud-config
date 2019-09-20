@@ -1,0 +1,31 @@
+spring:
+  profiles:
+    active:
+      - pro
+      
+---
+server:
+  port: 6002
+
+spring:
+  profiles: pro
+  application:
+    name: springcloud-config-client
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaServer1000:1000/eureka/,http://eurekaServer1001:1001/eureka/
+---
+server:
+  port: 6003
+
+spring:
+  profiles: test
+  application:
+    name: springcloud-config-client
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaServer1000:1000/eureka/,http://eurekaServer1001:1001/eureka/
